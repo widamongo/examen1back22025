@@ -3,7 +3,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
-
+@Id
 @Entit
 public class Docente {
 
@@ -25,6 +25,15 @@ public class Docente {
 
 
 
+    public Docente() {
+    }
+    public Docente(Integer id, String especialidad, List<Curso> cursos, Usuario usuario) {
+        this.id = id;
+        this.especialidad = especialidad;
+        this.cursos = cursos;
+        this.usuario = usuario;
+
+}
     public Integer getId() {
         return id;
     }
@@ -39,5 +48,21 @@ public class Docente {
 
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
+    }
+
+    public List<Curso> getCursos() {
+        return cursos;
+    }
+
+    public void setCursos(List<Curso> cursos) {
+        this.cursos = cursos;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }
