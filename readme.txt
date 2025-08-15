@@ -11,3 +11,14 @@ La clase docente no tiene constructores y lo getter y setter estan incompletos, 
 En la clase usuario hacia falta el atributo docente el el constructor, se agrega en la linea 40, ademas de los getter y seter.
 
 Se intenta corregir el error del gestor de dependencias sin exito, con la ayuda de IA indica eliminar las carpetas gradle y crear archivo pom.xml pero la verdad es una solucion invasiva y no fui capas de implementarla y me hace plantar si se debe crear el proyecto desde cero con spring initializr
+
+Para corregir el error de gestor de dependencias se puedes reemplazar las carpetas de anterior gestor, crear el archivo pom.xml pero no se que tan buena practica sea y la idea era no usar IA
+
+Como la idea era no usar IA, no logro resolver problema de gestor de dependencias y por ende el codigo no compila, no puedo conectar a la BD y dejo el trabajo hasta este punto.
+
+Puntos a reforzar
+
+-Validar como solucionar un cambio del gestor de dependencias en un proyecto ya realizado
+-No me queda claro si el proyecto se debia crear nuevamente desde spring initializr
+-Reforzar la conocimiento en conexion a BD, en la clase que se explico este tema tube problemas con XAMPP
+y no pude realizarlo
